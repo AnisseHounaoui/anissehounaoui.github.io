@@ -720,7 +720,7 @@
 
 <section class="timeline certifications">
   <div class="title-wrapper">
-    <h2 class="h2">Certifications</h2>
+    <h2 class="h2">Certifications (<span id="cert-count">0</span>)</h2>
   </div>
 
   <div class="certification-card-list">
@@ -799,7 +799,11 @@
     <!-- Add more certification cards here -->
   </div>
 </section>
-
+<script>
+  // Count the number of certification cards and update the span
+  const certCount = document.querySelectorAll('.certification-card').length;
+  document.getElementById('cert-count').textContent = certCount;
+</script>
      
       </article>
 
